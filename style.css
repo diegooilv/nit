@@ -1,0 +1,153 @@
+body {
+    margin: 0;
+    font-family: 'Merriweather', serif;
+    background-color: #0f0f0f;
+    color: #f0f0f0;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #1a1a1a;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+header h1 {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.8rem;
+    color: #b67d4c;
+}
+
+.subtitle {
+    margin-top: 4px;
+    font-size: 1rem;
+    color: #999;
+}
+
+nav {
+    margin-top: 120px;
+    background-color: #1a1a1a;
+    padding: 1rem 2rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #5e5eff;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #b67d4c;
+}
+
+main {
+    padding: 2rem;
+    padding-top: 10px;
+    max-width: 800px;
+    margin: auto;
+}
+
+section.intro p {
+    font-style: italic;
+    color: #ccc;
+    text-align: justify;
+}
+
+section.concept {
+    margin: 2rem 0;
+    border-left: 4px solid #5e5eff;
+    padding-left: 1rem;
+}
+
+section.concept h2 {
+    cursor: pointer;
+    color: #b67d4c;
+    margin-bottom: 0.5rem;
+    transition: color 0.3s ease;
+}
+
+section.concept h2:hover {
+    color: #5e5eff;
+}
+
+section .content {
+    display: none;
+    margin-top: 0.5rem;
+    padding-left: 0.5rem;
+    border-left: 2px solid #333;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.controls {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.controls button {
+    padding: 0.6rem 1.2rem;
+    background-color: #5e5eff;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.controls button:hover {
+    background-color: #4a4ae0;
+}
+
+.comment-box {
+    margin-top: 3rem;
+}
+
+.comment-box h3 {
+    margin-bottom: 0.5rem;
+}
+
+.comment-box textarea {
+    width: 100%;
+    height: 100px;
+    background: #1a1a1a;
+    border: 1px solid #444;
+    color: #eee;
+    padding: 1rem;
+    font-family: 'Inter', sans-serif;
+    resize: vertical;
+    border-radius: 8px;
+}
+
+footer {
+    margin-top: 4rem;
+    padding: 2rem;
+    text-align: center;
+    color: #666;
+    font-style: italic;
+    border-top: 1px solid #333;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
