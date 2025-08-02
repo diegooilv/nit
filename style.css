@@ -32,8 +32,10 @@ header h1 {
 
 nav {
     margin-top: 120px;
-    background-color: #1a1a1a;
+    background: linear-gradient(135deg, #1a1a1a, #1a1a1a);
     padding: 1rem 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 nav ul {
@@ -42,28 +44,46 @@ nav ul {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
+    justify-content: center;
 }
 
 nav a {
     text-decoration: none;
     color: #5e5eff;
-    transition: color 0.3s ease;
+    /* Azul original */
+    font-family: 'Arial', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
-nav a:hover {
+nav a:hover,
+nav a:focus {
     color: #b67d4c;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    outline: none;
+}
+
+nav a:focus {
+    border: 2px solid #b67d4c;
 }
 
 main {
     padding: 2rem;
-    padding-top: 10px;
+    padding-top: 8rem;
     max-width: 800px;
     margin: auto;
 }
 
 section.intro p {
     font-style: italic;
-    color: #ccc;
+    font-size: small;
     text-align: justify;
 }
 
@@ -90,6 +110,11 @@ section .content {
     padding-left: 0.5rem;
     border-left: 2px solid #333;
     animation: fadeIn 0.5s ease-in-out;
+}
+
+
+section.intro {
+    display: flex;
 }
 
 .controls {
