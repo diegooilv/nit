@@ -167,6 +167,32 @@ section.intro {
     display: block;
 }
 
+#enviar {
+    background: linear-gradient(135deg, #4CAF50, #45a049);
+    color: #fff;
+    border: none;
+    padding: 14px 28px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: 0.3s ease-in-out;
+}
+
+#enviar:hover {
+    background: linear-gradient(135deg, #45a049, #3e8e41);
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+.mensagem {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+    display: none;
+    animation: fadeIn 0.5s ease-in-out;
+}
 
 footer {
     margin-top: 4rem;
@@ -175,6 +201,20 @@ footer {
     color: #666;
     font-style: italic;
     border-top: 1px solid #333;
+}
+
+@media (max-width: 550px) {
+    main {
+        padding-top: 10rem;
+    }
+
+}
+
+@media (max-width: 390px) {
+    main {
+        padding-top: 11rem;
+    }
+
 }
 
 @keyframes fadeIn {

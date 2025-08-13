@@ -27,7 +27,6 @@
         <h1>Minha Leitura de Nietzsche</h1>
         <p class="subtitle">Reflexões pessoais sobre os principais conceitos do pensador alemão</p>
     </header>
-    
     <main>
         <section class="intro">
             <p><em>Busco entender Nietzsche não como alguém que traz respostas definitivas, mas como alguém que soube
@@ -134,8 +133,10 @@
             <button onclick="expandAll()">Quero ler tudo de uma vez</button>
         </div>
         <div class="comment-box">
-            <h3>💬 Deixe sua reflexão (simulado)</h3>
+            <h3>💬 Deixe sua reflexão</h3>
             <textarea id="textearea" placeholder="O que esse texto te fez pensar?" aria-label="Comentário"></textarea>
+            <button id="enviar">Enviar</button>
+            <p class="mensagem" id="mensagem" style="display:none;">Enviado!</p>
         </div>
     </main>
     <footer class="site-footer">
@@ -143,6 +144,7 @@
         <p>&copy; 2025 Diego</p>
     </footer>
     <script src="script.js"></script>
+    <script src="./js/jsonbin.js"></script>
 </body>
 
 </html>
